@@ -1,6 +1,8 @@
-export function greet(name = "stranger") {
-  if (name === "Felix") {
-    return "Hello coach!";
+import { coaches } from "./coaches";
+
+export function greet(name = "Stranger") {
+  if (coaches.includes(name)) {
+    return "Hello Coach!";
   }
 
   return `Hello ${name}!`;
